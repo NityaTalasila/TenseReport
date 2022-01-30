@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TenseReport.Options" BackgroundColor="#3398FF">
+    <ContentPage.Content>
+        <StackLayout>
+            <RelativeLayout>
+                <Button Text="Review Procedure" Font="Bold" Clicked="NewPatient" BackgroundColor="Gray"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0.15}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0.4}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.5}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.075}"/>
+                <Button Text="First Screening" Font="Bold" Clicked="Continue" BackgroundColor="Gray"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0.15}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0.55}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.5}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.075}"/>
+            </RelativeLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

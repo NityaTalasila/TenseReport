@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TenseReport.VerifyPatient" BackgroundColor="#109ce8">
+    <ContentPage.Content>
+        <StackLayout>
+            <BoxView BackgroundColor="Transparent"/>
+            <Label Text="Is the following patient information correct?" TextColor="White" Font="Bold, 30" HorizontalTextAlignment="Center"></Label>
+            <BoxView BackgroundColor="Transparent"/>
+            <Entry x:Name="txtName" FontAttributes="Bold" Placeholder="Name:"></Entry>
+            <Entry x:Name="txtDate" FontAttributes="Bold" Placeholder="Birth Date:"></Entry>
+            <Entry x:Name="txtContact" FontAttributes="Bold" Placeholder="Contact #:"></Entry>
+            <Entry x:Name="txtEmail" FontAttributes="Bold" Placeholder="Email:"></Entry>
+            <RelativeLayout>
+                <Button Clicked="Confirm" Text="Yes" HorizontalOptions="End" BackgroundColor="#a9cadb"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=-0.6}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor=0}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.7}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.2}"/>
+                <Button Clicked="Reset" Text="No" HorizontalOptions="Start" BackgroundColor="#a9cadb"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=1}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height, Factor=0}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.7}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.2}"/>
+            </RelativeLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

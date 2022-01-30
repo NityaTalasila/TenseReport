@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TenseReport.MainPage">
+
+
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*" />
+                <RowDefinition Height="96*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <BoxView Color="#a9cadb" Grid.Row="0" Grid.ColumnSpan="2"/>
+            <BoxView Color="#109ce8"  Grid.Row="1" Grid.ColumnSpan="2"/>
+            <Image Source="TenseReportLogo.png"  HorizontalOptions="Center" VerticalOptions="Start" Grid.Row="1" Grid.ColumnSpan="2" Scale="0.7"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.9}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.1}"/>
+            <Label Text="HackerJackets" TextColor="#C67000" Font="Bold,20" HorizontalOptions="Center" VerticalOptions="Start" Grid.Row="0" Grid.ColumnSpan="2"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.9}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.1}"/>
+            <RelativeLayout Grid.Row="1" Grid.ColumnSpan="2">
+                <Label Text="" TextColor="#C67000" Font="Bold,20" HorizontalOptions="Center" VerticalOptions="Start" Grid.Row="0" Grid.ColumnSpan="2"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.9}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.1}"/>
+                <Label Text="TenseReport" TextColor="White" Font="Bold,40" HorizontalOptions="Center" VerticalOptions="Start"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0.1}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0.1}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.7}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.1}"/>
+                <Button Text="Create New Patient" Font="Bold" Clicked="NewPatient" BackgroundColor="#a9cadb"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0.165}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0.65}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.5}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.075}"/>
+                <Button Text="Update Patient" Font="Bold" Clicked="UpdatePatient"  BackgroundColor="#a9cadb"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0.165}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,  Property=Height,Factor=0.75}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=.5}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.075}"/>
+            </RelativeLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
